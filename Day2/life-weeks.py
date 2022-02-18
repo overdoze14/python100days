@@ -10,7 +10,7 @@ if age > 90:
     print("You are dead, sorry) This programm can calculate left time for people younger then 90")
     exit()
 years = 90 - age
-months = int( years * 12 )
+months = years * 12
 weeks = years * 52
 days = years * 365
 
