@@ -9,9 +9,12 @@
 print("Welcome to the tip calculator!")
 bill = float(input("What was the total bill? $ "))
 
-tips = input("How much tip would you like to give? 10, 12, or 15?")
+tips = int(input("How much tip would you like to give? 10, 12, or 15?"))
 
 person = int(input("How many people to split the bill?"))
 
+toPay = round((bill + (bill * tips) / 100) / person, 2)
 
-print("$",bill)
+print(f"Each person should pay: ${toPay}")
+
+#use round function
