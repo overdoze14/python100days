@@ -30,18 +30,18 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
-step1 = input("You\'re at a crossroad. Where do you want to go? Type 'left' or 'right' \n")
+step1 = input("You\'re at a crossroad. Where do you want to go? Type 'left' or 'right' \n").lower
 
 if step1 == "right":
     print ("Fall into a hole. \n GAME OVER")
     exit()
 elif step1 == "left":
-    step2 = input("'You\'ve come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.' \n")
+    step2 = input("'You\'ve come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.' \n").lower
     if step2 == "swim":
         print ("Attacked by trout. \n GAME OVER")
         exit()
     elif step2 == "wait":
-        step3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n")
+        step3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n").lower
         if step3 == "blue":
             print ("Eaten by beasts. \n GAME OVER")
             exit()
