@@ -19,4 +19,11 @@ e = combined_string.count("e")
 
 y = l + o + v + e
 
-print(f"Your score is {x}{y} %")
+love_score = str(x) + str(y)
+love_score = int(love_score)
+if love_score < 0 or love_score > 90:
+    print(f"Your score is {love_score}, you go together like coke and mentos")
+elif love_score >= 40 and love_score <= 50:
+    print(f"Your score is {love_score}, you are alright together")
+else:
+    print(f"Your score is {love_score}")
